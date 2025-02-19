@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const imagesURL = import.meta.env.VITE_IMG;
 
