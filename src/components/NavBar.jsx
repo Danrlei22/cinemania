@@ -20,7 +20,7 @@ const Navbar = () => {
 
   return (
     <nav id="navbar">
-      <div className="container">
+      <div className="containerNavBar">
         <h2>
           <Link to="/">
             <TbMovie /> Cine Mania

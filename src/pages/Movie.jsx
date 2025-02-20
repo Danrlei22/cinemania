@@ -35,7 +35,7 @@ const Movie = () => {
   useEffect(() => {
     const movieUrl = `${moviesURL}${id}?${apiKey}`;
     getMovie(movieUrl);
-  }, []);
+  }, [id]);
 
   return (
     <div className="movie-page">
