@@ -6,3 +6,24 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+
+# API Cine Mania
+
+Este projeto consome a API da TMDB, um banco de dados colaborativo de filmes e TV, que permite acessar informações detalhadas sobre diversas produções.
+
+# Objetivo
+
+O objetivo deste projeto é fornecer uma interface simples e interativa para que usuários possam ver filmes organizados por suas melhores classificações. Também podem pesquisar pelo filme que desejar e visualizar detalhes, como orçamento, receita, duração e uma descrição.
+
+# Tecnologias utilizadas
+
+- React: Biblioteca para construir interfaces de usuário.
+- Vite: Ferramenta de bundling para desenvolvimento rápido.
+- API do TMDB: procurar um filme (ou programa de TV, ou pessoa) e então consultar os detalhes.
+
+# Instalação
+
+- Clone o repositório
+- npm install (Instalar as dependências)
+- npm run dev (Iniciar o servidor de desenvolvimento)
