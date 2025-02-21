@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { BiSearchAlt2 } from "react-icons/bi";
 
 import "./Navbar.css";
 import { TbMovie } from "react-icons/tb";
+import { LuArrowBigLeft } from "react-icons/lu";
 
 const Navbar = () => {
   const [search, setSearch] = useState("");
@@ -18,25 +19,42 @@ const Navbar = () => {
     setSearch("");
   };
 
+  const location = useLocation();
+  const handBack = () => {
+    navigate("/");
+  };
+
+  const isMovePage = location.pathname.includes("/movie");
+
   return (
-    <nav id="navbar">
+    <nav className="navbar">
       <div className="containerNavBar">
-        <h2>
+        {location.pathname !== "/" && (
+          <button onClick={handBack} className="btnBack">
+            <LuArrowBigLeft className="iconBack" />
+          </button>
+        )}
+
+        <h2 className="navbarH2">
           <Link to="/">
             <TbMovie /> Cine Mania
           </Link>
         </h2>
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            placeholder="Pesquise um filme"
-            onChange={(e) => setSearch(e.target.value)}
-            value={search}
-          />
-          <button type="submit">
-            <BiSearchAlt2 />
-          </button>
-        </form>
+
+        {!isMovePage && (
+          <form onSubmit={handleSubmit} className="searchForm">
+            <input
+              type="text"
+              className="searchInput"
+              placeholder="Pesquise um filme"
+              onChange={(e) => setSearch(e.target.value)}
+              value={search}
+            />
+            <button type="submit" className="btnSearch">
+              <BiSearchAlt2 />
+            </button>
+          </form>
+        )}
       </div>
     </nav>
   );

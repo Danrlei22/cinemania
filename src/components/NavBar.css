@@ -1,55 +1,100 @@
-#navbar {
-    background-color: #260db2;
-    color: #fff;
-    padding: 1em 2em;
+.navbar {
+  background-color: #260db2;
+  color: #fff;
+  padding: 1em 2em;
+  width: 100%;
+  min-width: 350px;
+}
+
+.containerNavBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.navbarH2 {
+  font-size: 33px;
+}
+
+.navbarH2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+}
+
+.searchForm {
+  display: flex;
+  gap: 0.5rem;
+  position: absolute;
+  right: 2em;
+}
+
+.searchInput {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  border: none;
+}
+
+.btnSearch,
+.btnBack {
+  background-color: #28a745;
+  border: 2px solid #28a745;
+  border-radius: 4px;
+  color: #000;
+  padding: 0.3rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.btnSearch:hover,
+.btnBack:hover {
+  background-color: transparent;
+  color: #28a745;
+}
+
+.btnBack {
+  position: absolute;
+  left: 2em;
+  width: 2em;
+}
+
+.iconBack {
+  font-size: 1.2em;
+}
+
+@media (max-width: 900px) {
+  .searchForm {
+    right: 0;
   }
-  
-  #navbar .containerNavBar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+
+@media (max-width: 750px) {
+  .containerNavBar {
+    flex-direction: column;
+  }
+
+  .searchForm{
+    position: relative;
+    margin-top: 1em;
     width: 100%;
-  }
-  
-  #navbar h2{
-      font-size: 33px;
-  }
-  
-  #navbar h2 a {
-    display: flex;
     justify-content: center;
-    align-items: center;
-    left: 50%;
   }
-  
-  #navbar form {
-    display: flex;
-    gap: 0.5rem;
-    position: absolute;
-    right: 2em;
+
+  .btnBack{
+    left: 0;
   }
-  
-  #navbar input {
-    padding: 0.25rem 0.5rem;
-    border-radius: 4px;
-    border: none;
+
+}
+
+@media (max-width: 400px) {
+  .btnBack {
+    position: relative;
   }
-  
-  #navbar button {
-    background-color: #28a745;
-    border: 2px solid #28a745;
-    border-radius: 4px;
-    color: #000;
-    padding: 0.3rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    transition: 0.4s;
-  }
-  
-  #navbar button:hover {
-    background-color: transparent;
-    color: #28a745;
-  }
-  
+}
