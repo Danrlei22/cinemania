@@ -7,6 +7,7 @@
   border: 2px solid #f7d354;
   padding: 1em 3em;
   background-color: #000;
+  min-width: 350px;
 }
 
 .movie-page svg {
@@ -24,8 +25,8 @@
   margin-bottom: 1rem;
 }
 
-.movie-page .movie-card img{
-    border: 2px solid #fff;
+.movie-page .movie-card img {
+  border: 2px solid #fff;
 }
 
 .movie-page .movie-card h2 {
@@ -45,14 +46,14 @@
   margin-bottom: 2rem;
 }
 
-.boxInfo{
-    border: 2px solid #f7d354;
-    padding: 0.5em;
-    text-align: center;
+.boxInfo {
+  border: 2px solid #f7d354;
+  padding: 0.5em;
+  text-align: center;
 }
 
-.boxInfo hr{
-    margin-bottom: 1.5em;
+.boxInfo hr {
+  margin-bottom: 1.5em;
 }
 
 .info {
@@ -69,10 +70,30 @@
 }
 
 .info p {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .description p {
   line-height: 1.5;
   text-align: center;
+}
+
+@media (max-width: 650px) {
+  .movie-page .movie-card img {
+    width: 300px;
+    height: auto;
+  }
+
+  .movie-page {
+    margin: none;
+    border: none;
+    padding: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .movie-page .movie-card img {
+    width: 250px;
+    height: auto;
+  }
 }
