@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { BiSearchAlt2 } from "react-icons/bi";
 
-import "./Navbar.css";
+import "./NavBar.css";
 import { TbMovie } from "react-icons/tb";
 import { LuArrowBigLeft } from "react-icons/lu";
 
