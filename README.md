@@ -12,6 +12,10 @@ Currently, two official plugins are available:
 
 Este projeto consome a API da TMDB, um banco de dados colaborativo de filmes e TV, que permite acessar informações detalhadas sobre diversas produções.
 
+# Pode ser acessado pelo no link abaixo
+
+https://cinemaniaaa.netlify.app/
+
 # Objetivo
 
 O objetivo deste projeto é fornecer uma interface simples e interativa para que usuários possam ver filmes organizados por suas melhores classificações. Também podem pesquisar pelo filme que desejar e visualizar detalhes, como orçamento, receita, duração e uma descrição.
